@@ -1,0 +1,99 @@
+@import url('https://fonts.cdnfonts.com/css/calculator');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, black, gray);
+    text-align: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: azure;
+    font-family: 'Calculator', sans-serif;
+    font-size: 45px;
+}
+
+.container {
+    border: none;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgb(140, 15, 145), rgb(0, 0, 0));
+}
+
+.screen {
+    border: none;
+    margin: 10px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 10px 20px 10px 25px;
+    font-size: 50px;
+    font-family: 'Calculator', sans-serif;
+
+}
+
+input {
+    text-align: end;
+    background: transparent;
+    color: rgb(255, 251, 251);
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.buttons {
+    margin: 10px;
+    margin-top: 0;
+    border: none;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(5, 70px);
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 5px;
+
+
+}
+
+button {
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button.equals {
+    grid-column: span 2;
+}
+
+.operators {
+    background-color: orangered;
+    border: none;
+
+}
+
+.non-op,
+.num {
+    color: black;
+}
+
+.comment {
+    color: red;
+    font-size: 30px;
+}
