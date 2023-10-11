@@ -96,4 +96,5 @@ button.equals {
 .comment {
     color: red;
     font-size: 30px;
+    background: transparent;
 }
