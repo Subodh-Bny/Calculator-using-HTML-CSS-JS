@@ -16,11 +16,12 @@ h2 {
 }
 
 .container {
+    margin-top: 0;
     border: none;
-    height: 500px;
-    width: 400px;
+    height: fit-content;
+    width: 300px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     background: linear-gradient(45deg, rgb(140, 15, 145), rgb(0, 0, 0));
@@ -28,16 +29,14 @@ h2 {
 
 .screen {
     border: none;
-    margin: 10px;
     height: 100px;
     border-radius: 10px;
     display: flex;
     justify-content: end;
     align-items: end;
-    padding: 10px 20px 10px 25px;
     font-size: 50px;
     font-family: 'Calculator', sans-serif;
-
+    width: auto;
 }
 
 input {
@@ -56,13 +55,11 @@ input::placeholder {
     border: none;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 80px);
+    grid-template-columns: repeat(4, 70px);
     grid-template-rows: repeat(5, 70px);
-    justify-content: space-evenly;
-    padding: 10px;
-    gap: 5px;
-
-
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 button {
@@ -71,6 +68,8 @@ button {
     font-weight: 500;
     font-size: 30px;
     border-radius: 50px;
+    height: 60px;
+    width: 60px;
 }
 
 button:hover {
@@ -79,11 +78,13 @@ button:hover {
 
 button.equals {
     grid-column: span 2;
+    width: 135px;
 }
 
 .operators {
     background-color: orangered;
     border: none;
+
 }
 
 .non-op,
@@ -93,7 +94,7 @@ button.equals {
 
 .comment {
     margin-top: 8px;
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 30px;
     background: transparent;
 }
