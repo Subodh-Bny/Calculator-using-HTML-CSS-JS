@@ -3,7 +3,7 @@
 body {
     display: flex;
     align-items: center;
-    height: 120vh;
+    height: fit-content;
     background: linear-gradient(45deg, black, gray);
     text-align: center;
     flex-direction: column;
